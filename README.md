@@ -15,7 +15,8 @@ How to Use it
 ------------------------
 	1. Press Win Key + R and type 'services.msc'.
 	2. Identify those services that are required for Oracle to run.
-	3. Configure them to start manually. To do that right click the service and and choose Properties. In the Properties Dialog set the Startup type as Manual.
+	3. Configure them to start manually. To do that right click the service and and choose 
+	Properties. In the Properties Dialog set the Startup type as Manual.
 	4. Note down the service name from the properties dialog.
 	5. Do step 3 and 4 for all the services you identified in step 2.
 
@@ -32,4 +33,4 @@ So, thats very simple and pretty straight forward. Don't forgot to Start the ser
 
 ##Contact##
 
-I you have any queries feel free to write to arunvelsriram@gmail.com
+If you have any queries feel free to write to arunvelsriram@gmail.com

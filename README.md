@@ -28,7 +28,7 @@ How to Use it
 
 So, thats very simple and pretty straight forward. Don't forgot to Start the services when you want to work with Oracle. 
 
-##**Important**##
+##Important##
 
 	If you are in Winows Vista, Windows 7, Windows 8 or Windows 8.1 always run this file as administrator. 
 	To do so right click the file and select "Run as administrator".

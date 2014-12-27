@@ -13,22 +13,20 @@ How to Use it
 -------------
 1. Getting things ready
 ------------------------
-	1. Press Win Key + R and type 'services.msc'.
-	2. Identify those services that are required for Oracle to run.
-	3. Configure them to start manually. To do that right click the service and and choose 
-	Properties. In the Properties Dialog set the Startup type as Manual.
-	4. Note down the service name from the properties dialog.
-	5. Do step 3 and 4 for all the services you identified in step 2.
+* Press Win Key + R and type 'services.msc'.
+* Identify those services that are required for Oracle to run.
+* Configure them to start manually. To do that right click the service and and choose Properties. In the Properties Dialog set the Startup type as Manual.
+* Note down the service name from the properties dialog.
+* Do step 3 and 4 for all the services you identified in step 2.
 
 2. Editing the source
 ---------------------
-	1. If you want to add a service called 'xxx' to the source then add 'net start xxx' to the first if block and 
+* If you want to add a service called 'xxx' to the source then add 'net start xxx' to the first if block and 
 	'net stop xxx' to the second if block.
-	2. Save the file.
+* Save the file.
 
 So, thats very simple and pretty straight forward. Don't forgot to Start the services when you want to work with Oracle. 
 
 ##Important##
 
-	If you are in Winows Vista, Windows 7, Windows 8 or Windows 8.1 always run this file as administrator. 
-	To do so right click the file and select "Run as administrator".
+If you are in Winows Vista, Windows 7, Windows 8 or Windows 8.1 always run this file as administrator. To do so right click the file and select "Run as administrator".

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>OracleServicesManager by arunvelsriram</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>OracleServicesManager</h1>
+        <h2>A simple Batch script used to start/stop Oracle services in Windows</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/arunvelsriram/OracleServicesManager/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/arunvelsriram/OracleServicesManager/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/arunvelsriram/OracleServicesManager" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="oracleservicesmanager" class="anchor" href="#oracleservicesmanager" aria-hidden="true"><span class="octicon octicon-link"></span></a>OracleServicesManager</h1>
+
+<p>OracleServicesManager is simple Batch script used to start/stop Oracle services in Windows.</p>
+
+<p>The reason behind its development is that, the Oracle services which run in the background 
+reduces computer's performance. To enhance the performance these services need to be stopped 
+when you are not using Oracle.</p>
+
+<p>This tool was originally created for Oracle 10g Enterprise Edition. So you can make use of it if you have Oracle 10g Enterprise Edition. Otherwise edit the source to make it work with the version of Oracle you have.</p>
+
+<h2>
+<a id="how-to-use-it" class="anchor" href="#how-to-use-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Use it</h2>
+
+<h2>
+<a id="1-getting-things-ready" class="anchor" href="#1-getting-things-ready" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Getting things ready</h2>
+
+<ul>
+<li>Press Win Key + R and type 'services.msc'.</li>
+<li>Identify those services that are required for Oracle to run.</li>
+<li>Configure them to start manually. To do that right click the service and and choose Properties. In the Properties Dialog set the Startup type as Manual.</li>
+<li>Note down the service name from the properties dialog.</li>
+<li><p>Do step 3 and 4 for all the services you identified in step 2.</p></li>
+</ul>
+
+<h2>
+<a id="2-editing-the-source" class="anchor" href="#2-editing-the-source" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Editing the source</h2>
+
+<ul>
+<li>If you want to add a service called 'xxx' to the source then add 'net start xxx' to the first if block and 
+'net stop xxx' to the second if block.</li>
+<li>Save the file.</li>
+</ul>
+
+<p>So, thats very simple and pretty straight forward. Don't forgot to Start the services when you want to work with Oracle. </p>
+
+<h2>
+<a id="important" class="anchor" href="#important" aria-hidden="true"><span class="octicon octicon-link"></span></a>Important</h2>
+
+<p>If you are in Windows Vista, Windows 7, Windows 8 or Windows 8.1 always run this file as administrator. To do so right click the file and select "Run as administrator".</p>
+
+<h3>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h3>
+
+<p><a href="http://github.com/arunvelsriram">Arunvel Sriram</a> </p>
+
+<h3>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h3>
+
+<p>Email : <a href="mailto:arunvelsriram@gmail.com">arunvelsriram@gmail.com</a></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
